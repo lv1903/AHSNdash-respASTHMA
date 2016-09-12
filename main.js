@@ -1,3 +1,4 @@
+// Standard beginning of express apps
 
 var express = require("express");
 var jade = require("jade");
@@ -12,12 +13,12 @@ app.use(bodyParser.json({limit: (5*1024*1000) }));
 
 
 
-
+// importing libraries/modules
 var phantom = require('phantom');
 var fs = require('fs');
 var path = require('path');
 
-
+// importing own func
 var f = require("./serverfun.js");
 
 
@@ -27,7 +28,7 @@ var config_obj = require("./configs/master_config.json")
 
 
 //get topojson
-var all_topojson_obj = {};
+var all_topojson_obj = {}; //create dict obj (declare if not become global)
 
 var areaTypeArray = config_obj.areaTypeDataBaseDetails;
 
@@ -609,7 +610,7 @@ app.get("/pdf/datavis/alcdash/:reportType/:areaType/:indicator/:gender/:area", f
             format: "A4",
             orientation: 'landscape',
             margin: '0cm'
-        };    
+        };
 
     var zoomFactor = 1;
 
@@ -661,9 +662,9 @@ app.get("/pdf/datavis/alcdash/:reportType/:areaType/:indicator/:gender/:area", f
                             if(err){console.log(err.message)}
                             fs.unlink(file)
                         })
-			ph.exit();	
-                    })		    
-                });                
+			ph.exit();
+                    })
+                });
             });
         })
     }, {

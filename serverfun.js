@@ -121,7 +121,7 @@ module.exports = {
         }
         return uniqueArr
     },
-
+// create nested objects - i.e. combine multiple jsons
     nestObj: function(obj, index_keyArray, keyArray, arr){
         //recursively create nested object
         if(index_keyArray  < keyArray.length){
@@ -195,7 +195,7 @@ module.exports = {
 
     },
 
-
+// get the data for the enland avs and hist plots on server so don't have to send all data over the wire
     getDensityArray: function(source_arr){
 
         //from a source array of values, returns an array of desnsities for interger values up to max value + 10%
@@ -324,6 +324,3 @@ module.exports = {
 
 
 };
-
-
-
