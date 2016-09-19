@@ -1,7 +1,7 @@
 {
 
   "defaultArea": "Wessex",
-  "defaultPeriod": 2013,
+  "defaultPeriod": 2008,
   "firstPeriod": 2008,
   "lastPeriod": 2015,
 
@@ -43,41 +43,41 @@
 
 
   "indicatorMapping":{
-    "Admission episodes for alcohol-related conditions": "9.01 - Admission episodes for alcohol-related conditions (Broad)",
-    "Alcohol-specific mortality": "2.01 - Alcohol-specific mortality",
-    "Mortality from chronic liver disease": "3.01 - Mortality from chronic liver disease",
-    "Months of life lost due to alcohol": "1.01 - Months of life lost due to alcohol"
+    "Estimated Asthma prevalence": "Estimated prevalence of asthma (all ages)",
+    "QOF Asthma prevalence": "Asthma: QOF prevalence (all ages)",
+    "Total Asthma admissions": "Asthma admissions per 1,000 population",
+    "Emergency Asthma admissions": "Emergency asthma admissions per 1,000 population"
 
   },
 
   "indicatorArray":[
-    "Admission episodes for alcohol-related conditions",
-    "Alcohol-specific mortality",
-    "Mortality from chronic liver disease",
-    "Months of life lost due to alcohol"
+    "Estimated Asthma prevalence",
+    "QOF Asthma prevalence",
+    "Total Asthma admissions",
+    "Emergency Asthma admissions"
   ],
 
 
   "indicatorLabels":{
-    "Mortality from chronic liver disease": "deaths per 100,000",
-    "Alcohol-specific mortality": "deaths per 100,000",
-    "Months of life lost due to alcohol": "months of life lost",
-    "Admission episodes for alcohol-related conditions": "admissions per 100,000"
+    "Total Asthma admissions": "admissions per 1,000",
+    "QOF Asthma prevalence": "% of population",
+    "Emergency Asthma admissions": "admissions per 1,000",
+    "Estimated Asthma prevalence": "% of population"
   },
 
   "indicatorCountLabels":{
-    "Mortality from chronic liver disease": "over 3 years",
-    "Alcohol-specific mortality": "over 3 years",
-    "Months of life lost due to alcohol": "over 3 years",
-    "Admission episodes for alcohol-related conditions": "per year"
+    "Total Asthma admissions": "per year",
+    "QOF Asthma prevalence": "on register",
+    "Emergency Asthma admissions": "per year",
+    "Estimated Asthma prevalence": ""
   },
 
 
   "indicatorHighIsBad":{
-    "Mortality from chronic liver disease": true,
-    "Alcohol-specific mortality": true,
-    "Months of life lost due to alcohol": true,
-    "Admission episodes for alcohol-related conditions": true
+    "Total Asthma admissions": true,
+    "QOF Asthma prevalence": true,
+    "Emergency Asthma admissions": true,
+    "Estimated Asthma prevalence": true
   },
 
   "genderLabels": {
@@ -88,17 +88,17 @@
 
 
   "indicatorShortNames":{
-    "Mortality from chronic liver disease": "Mortality LD",
-    "Alcohol-specific mortality": "Alcohol mortality",
-    "Months of life lost due to alcohol": "Months lost",
-    "Admission episodes for alcohol-related conditions": "Admission"
+    "Total Asthma admissions": "Admissions",
+    "QOF Asthma prevalence": "QOF prev",
+    "Emergency Asthma admissions": "Emergy admissions",
+    "Estimated Asthma prevalence": "Est prevalence"
   },
 
   "indicatorDataBaseDetails":[
-    {"indicator": "3.01 - Mortality from chronic liver disease", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"},
-    {"indicator": "2.01 - Alcohol-specific mortality", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"},
-    {"indicator": "1.01 - Months of life lost due to alcohol", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"},
-    {"indicator": "9.01 - Admission episodes for alcohol-related conditions (Broad)", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"}
+    {"indicator": "Estimated prevalence of asthma (all ages)", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"},
+    {"indicator": "Asthma: QOF prevalence (all ages)", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"},
+    {"indicator": "Asthma admissions per 1,000 population", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"},
+    {"indicator": "Emergency asthma admissions per 1,000 population", "indicatorKey": "Indicator", "databaseId": "Bkl8P6-Jr"}
 
   ],
 
