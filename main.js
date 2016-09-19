@@ -79,7 +79,7 @@ var england_density_obj;
 var callNestObj = function(){
 
     var key;
-    var keyArr = ["Area Type", "Sex", "Indicator", "Map Period"];
+    var keyArr = ["Area_Type", "Sex", "Indicator", "Map_Period"];
 
     nested_obj = {};
     nested_obj = f.nestObj(nested_obj, 0, keyArr, data_arr);
@@ -131,10 +131,10 @@ app.get("/datavis/alcdash", function(req, res){
 
     var wessex_arr = data_arr.filter(function(obj){
         if(
-            obj["Area Type"] == areaType &&
+            obj["Area_Type"] == areaType &&
                 //indicatorMappedArr.indexOf(obj["Indicator"]) > -1 &&
             genderArr.indexOf(obj["Sex"]) > -1 &&
-            wessexList.indexOf(obj["Area Code"]) > -1
+            wessexList.indexOf(obj["Area_Code"]) > -1
         ){
             return obj
         }
@@ -308,17 +308,18 @@ app.get("/datavis/alcdash/IndicatorReport/:areaType/:indicator/:gender/:area", f
     //get list of wessex areas for area type
     var wessexList = config_obj.areaList[areaType].map(function(obj){ return obj.id});
 
+
     var wessex_arr = data_arr.filter(function(obj){
+
         if(
-            obj["Area Type"] == areaType &&
+            obj["Area_Type"] == areaType &&
             indicatorMappedArr.indexOf(obj["Indicator"]) > -1 &&
             genderArr.indexOf(obj["Sex"]) > -1 &&
-            wessexList.indexOf(obj["Area Code"]) > -1
+            wessexList.indexOf(obj["Area_Code"]) > -1
         ){
             return obj
         }
     });
-
 
     //get ordered list data and density data
     var ordered_list_obj = {};
@@ -393,10 +394,10 @@ app.get("/datavis/alcdash/AreaReport/:areaType/:area/:gender", function(req, res
 
     var wessex_arr = data_arr.filter(function(obj){
         if(
-            obj["Area Type"] == areaType &&
+            obj["Area_Type"] == areaType &&
                 //indicatorMappedArr.indexOf(obj["Indicator"]) > -1 &&
             genderArr.indexOf(obj["Sex"]) > -1 &&
-            wessexList.indexOf(obj["Area Code"]) > -1
+            wessexList.indexOf(obj["Area_Code"]) > -1
         ){
             return obj
         }
@@ -478,10 +479,10 @@ app.get("/datavis/alcdash/OverviewReport/:areaType/:area/:gender", function(req,
 
     var wessex_arr = data_arr.filter(function(obj){
         if(
-            obj["Area Type"] == areaType &&
+            obj["Area_Type"] == areaType &&
                 //indicatorMappedArr.indexOf(obj["Indicator"]) > -1 &&
             genderArr.indexOf(obj["Sex"]) > -1 &&
-            wessexList.indexOf(obj["Area Code"]) > -1
+            wessexList.indexOf(obj["Area_Code"]) > -1
         ){
             return obj
         }
@@ -675,8 +676,12 @@ app.get("/pdf/datavis/alcdash/:reportType/:areaType/:indicator/:gender/:area", f
 
 });
 
+app.get("/", function(req,res) {
+  res.redirect("http://cisdata.soton.ac.uk/");
+});
 
-
-
+app.get("/data_visualisation", function(req,res) {
+  res.redirect("http://cisdata.soton.ac.uk/data_visualisation");
+});
 
 app.listen(3011);
