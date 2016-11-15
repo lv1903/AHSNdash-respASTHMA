@@ -76,9 +76,12 @@ block content
       #genderSelector
          h3 Gender:
          select(onchange='anyChange()')#genderSelect
-            option(value='Male') Male
-            option(value='Female') Female
-            option(value='Persons') Persons
+            each val, key in config_obj.genderMapping
+              option(value=val) #{key}
+
+            //option(value='Male') Male
+            //option(value='Female') Female
+            //option(value='Persons') Persons
 
 
 

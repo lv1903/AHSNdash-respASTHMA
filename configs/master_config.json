@@ -19,27 +19,21 @@
   },
 
   "areaTypeMapping":{
-    "CCGs": "CCG",
-    "Counties": "CU",
-    "Districts": "DU"
+    "CCGs": "CCG"
   },
 
-  "areaTypeArray": ["CCG", "CU", "DU"],
+  "areaTypeArray": ["CCG"],
 
   "areaTypeLabels":{
-    "CCGs": "CCGs",
-    "Counties": "counties",
-    "Districts": "districts"
+    "CCGs": "CCGs"
   },
 
 
   "genderMapping":{
-    "males": "Male",
-    "females": "Female",
-    "persons": "Persons"
+    "Persons": "Persons"
   },
 
-  "genderArray": ["Male", "Female", "Persons"],
+  "genderArray": ["Persons"],
 
 
   "indicatorMapping":{
@@ -81,9 +75,7 @@
   },
 
   "genderLabels": {
-    "Male": "males",
-    "Female": "females",
-    "Persons": "persons"
+    "Persons": "Persons"
   },
 
 
